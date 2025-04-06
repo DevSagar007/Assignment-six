@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
 @theme {
 
     --color-white: #FFFFFF;
@@ -11,28 +10,6 @@
     --color-placeholder: #555555;
     --color-selection: #262626;
     --color-primary: #089EFF;
-
-    --fontWeight-normal: normal;
-    --fontWeight-thin: 100;
-    --fontWeight-elight: 200;
-    --fontWeight-light: 300;
-    --fontWeight-regular: 400;
-    --fontWeight-medium: 500;
-    --fontWeight-sbold: 600;
-    --fontWeight-bold: 700;
-    --fontWeight-ebold: 800;
-    --fontWeight-black: 900;
-
-    /* Font sizes */
-    --fontSize-fs-body: 16px;
-    --fontSize-fs-p: 16px;
-    --fontSize-fs-h1: 64px;
-    --fontSize-fs-h2: 40px;
-    --fontSize-fs-h3: 24px;
-    --fontSize-fs-h4: 20px;
-    --fontSize-fs-h5: 18px;
-    --fontSize-fs-h6: 16px;
-
 
     /* Custom breakpoints */
     --breakpoint-3xl: 1920px;
@@ -45,8 +22,8 @@
     --color-avocado-500: oklch(0.84 0.18 117.33);
     --color-avocado-600: oklch(0.53 0.12 118.34);
 
-    --color-border-primary: 'rgba(55, 19, 45, 0.25)',;
-    
+    --color-border-primary: 'rgba(55, 19, 45, 0.25)', ;
+
     /* Custom easings */
     --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
     --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
@@ -61,9 +38,29 @@
 /*   Typography scss
 /*----------------------------------------*/
 
-body {
-    font-family: var(--fontFamily-body)
+
+@layer base {
+    body {
+        font-family: var(--fontFamily-body);
+        color: #717181;
+        /* Default body text color */
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #12132D;
+    }
+
+    p {
+
+        color: #57576A;
+    }
 }
+
 
 /* h1,
 h2,
@@ -131,7 +128,7 @@ a {
 }
 
 a:focus,
-.button:focus  {
+.button:focus {
     text-decoration: none;
     outline: none;
 }
@@ -153,4 +150,27 @@ button:hover {
 
 button:focus {
     outline: 0;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    z-index: 1;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }

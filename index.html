@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReTro Forum</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss" prefix(ph);>
-      @theme {
-        --color-clifford: #da373d;
-      }
-    </style>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-white">
 
+    <!-- header section -->
     <div class="header">
         <div class="max-w-[1170px] mx-auto py-8">
             <div class="flex justify-between">
@@ -24,22 +20,34 @@
                 </div>
                  <!-- Navbar -->
                 <div class="flex gap-4">
-                    <button type="button" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 h[56px] w-[56px] border-border flex items-center justify-center has-tooltip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.25 12.0001L11.204 3.04507C11.644 2.60607 12.356 2.60607 12.795 3.04507L21.75 12.0001M4.5 9.75007V19.8751C4.5 20.4961 5.004 21.0001 5.625 21.0001H9.75V16.1251C9.75 15.5041 10.254 15.0001 10.875 15.0001H13.125C13.746 15.0001 14.25 15.5041 14.25 16.1251V21.0001H18.375C18.996 21.0001 19.5 20.4961 19.5 19.8751V9.75007M8.25 21.0001H16.5" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                    <div class="tooltip">
+                        <button type="button" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 min-h-[56px] w-[56px] border-border flex items-center justify-center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.25 12.0001L11.204 3.04507C11.644 2.60607 12.356 2.60607 12.795 3.04507L21.75 12.0001M4.5 9.75007V19.8751C4.5 20.4961 5.004 21.0001 5.625 21.0001H9.75V16.1251C9.75 15.5041 10.254 15.0001 10.875 15.0001H13.125C13.746 15.0001 14.25 15.5041 14.25 16.1251V21.0001H18.375C18.996 21.0001 19.5 20.4961 19.5 19.8751V9.75007M8.25 21.0001H16.5" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="tooltiptext">Tooltip</span>
+                        </button>
+                    </div>
+                    <div class="tooltip">
+                        <button type="button" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 min-h-[56px] w-[56px] border-border flex items-center justify-center"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.862 3.487L17.549 1.799C17.9007 1.44733 18.3777 1.24976 18.875 1.24976C19.3723 1.24976 19.8493 1.44733 20.201 1.799C20.5527 2.15068 20.7502 2.62766 20.7502 3.125C20.7502 3.62235 20.5527 4.09933 20.201 4.451L5.832 18.82C5.30332 19.3484 4.65137 19.7367 3.935 19.95L1.25 20.75L2.05 18.065C2.26328 17.3486 2.65163 16.6967 3.18 16.168L15.863 3.487H15.862ZM15.862 3.487L18.5 6.125" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <span class="tooltiptext">Tooltip</span>
+                    </div>
+                    <div class="tooltip">
+                        <button type="button" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 min-h-[56px] w-[56px] border-border flex items-center justify-center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 7.5V10.5M18 10.5V13.5M18 10.5H21M18 10.5H15M12.75 6.375C12.75 7.27011 12.3944 8.12855 11.7615 8.76149C11.1285 9.39442 10.2701 9.75 9.375 9.75C8.47989 9.75 7.62145 9.39442 6.98851 8.76149C6.35558 8.12855 6 7.27011 6 6.375C6 5.47989 6.35558 4.62145 6.98851 3.98851C7.62145 3.35558 8.47989 3 9.375 3C10.2701 3 11.1285 3.35558 11.7615 3.98851C12.3944 4.62145 12.75 5.47989 12.75 6.375ZM3 19.235V19.125C3 17.4342 3.67165 15.8127 4.86719 14.6172C6.06274 13.4216 7.68424 12.75 9.375 12.75C11.0658 12.75 12.6873 13.4216 13.8828 14.6172C15.0784 15.8127 15.75 17.4342 15.75 19.125V19.234C13.8255 20.3931 11.6206 21.0038 9.374 21C7.043 21 4.862 20.355 3 19.234V19.235Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        <span class="tooltiptext">Tooltip</span>
+                    </div>
                     </button>
-                    <button type="button" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 h[56px] w-[56px] border-border flex items-center justify-center has-tooltip"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.862 3.487L17.549 1.799C17.9007 1.44733 18.3777 1.24976 18.875 1.24976C19.3723 1.24976 19.8493 1.44733 20.201 1.799C20.5527 2.15068 20.7502 2.62766 20.7502 3.125C20.7502 3.62235 20.5527 4.09933 20.201 4.451L5.832 18.82C5.30332 19.3484 4.65137 19.7367 3.935 19.95L1.25 20.75L2.05 18.065C2.26328 17.3486 2.65163 16.6967 3.18 16.168L15.863 3.487H15.862ZM15.862 3.487L18.5 6.125" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <button type="button" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 h[56px] w-[56px] border-border flex items-center justify-center has-tooltip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 7.5V10.5M18 10.5V13.5M18 10.5H21M18 10.5H15M12.75 6.375C12.75 7.27011 12.3944 8.12855 11.7615 8.76149C11.1285 9.39442 10.2701 9.75 9.375 9.75C8.47989 9.75 7.62145 9.39442 6.98851 8.76149C6.35558 8.12855 6 7.27011 6 6.375C6 5.47989 6.35558 4.62145 6.98851 3.98851C7.62145 3.35558 8.47989 3 9.375 3C10.2701 3 11.1285 3.35558 11.7615 3.98851C12.3944 4.62145 12.75 5.47989 12.75 6.375ZM3 19.235V19.125C3 17.4342 3.67165 15.8127 4.86719 14.6172C6.06274 13.4216 7.68424 12.75 9.375 12.75C11.0658 12.75 12.6873 13.4216 13.8828 14.6172C15.0784 15.8127 15.75 17.4342 15.75 19.125V19.234C13.8255 20.3931 11.6206 21.0038 9.374 21C7.043 21 4.862 20.355 3 19.234V19.235Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <button type="button" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 h[56px] w-[56px] border-border flex items-center justify-center has-tooltip"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 3V4.5M3 4.5L5.77 3.807C7.8544 3.28605 10.0564 3.52795 11.978 4.489L12.086 4.543C13.9688 5.4843 16.1219 5.73589 18.171 5.254L21.281 4.522C20.9029 8.01155 20.9046 11.5318 21.286 15.021L18.172 15.753C16.1227 16.2354 13.9692 15.9842 12.086 15.043L11.978 14.989C10.0564 14.028 7.8544 13.786 5.77 14.307L3 15M3 4.5V15M3 21V15" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
+                    <div class="tooltip">
+                        <button type="button" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 min-h-[56px] w-[56px] border-border flex items-center justify-center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3V4.5M3 4.5L5.77 3.807C7.8544 3.28605 10.0564 3.52795 11.978 4.489L12.086 4.543C13.9688 5.4843 16.1219 5.73589 18.171 5.254L21.281 4.522C20.9029 8.01155 20.9046 11.5318 21.286 15.021L18.172 15.753C16.1227 16.2354 13.9692 15.9842 12.086 15.043L11.978 14.989C10.0564 14.028 7.8544 13.786 5.77 14.307L3 15M3 4.5V15M3 21V15" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <span class="tooltiptext">Tooltip</span>
+                    </div>
                     <button type="button" class="px-8 h-[56px] flex items-center y-2 text-white bg-indigo-500 rounded-full hover:bg-indigo-600">Sign In</button>
                 </div> 
             </div>
@@ -52,7 +60,7 @@
         <section class="bg-[#12132d] from-gray-900 to-gray-800 text-white p-[100px] rounded-[32px] max-w-[1170px] mx-auto shadow-lg">
             <div class="flex justify-between gap-x-24">
                 <div class="flex flex-col">
-                    <h2 class="text-[64px] font-black leading-[1.3]">Welcome to the <span class="text-indigo-400">ReTro</span> Forum</h2>
+                    <h2 class="text-[64px] font-black text-white leading-[1.3]">Welcome to the <span class="text-indigo-400">ReTro</span> Forum</h2>
                     <p class="mt-4 text-gray-300">Share your favorite opinion and win a WP forum coffee mug!</p>
             
                     <!-- Search Bar -->
@@ -73,6 +81,7 @@
 
         </section>
 
+        <!-- Let’s Discuss -->
         <section class="max-w-[1170px] mx-auto pt-[100px] pb-[100px]">
             <div class="">  
                 <div class="w-[50%] mx-auto mb-10">
@@ -83,404 +92,30 @@
                 </div>
                 <div class="flex gap-x-6">
                     <div class="w-9/12 flex flex-col gap-y-6">  
-                        <!-- single item -->
-                        <div class="bg-[#797DFC1A] border border-[#797DFC] p-9 rounded-[16px] flex items-start gap-x-6">
-                            <div class="relative">
-                                <div class="bg-white w-[72px] h-[72px] rounded-lg flex-shrink-0">
-                                    <img src="" alt="">
-                                </div>  
-                                <div class="w-[18px] h-[18px] rounded-full bg-[#10B981] absolute top-[-6px] right-[-6px] border-2 border-white"></div>
-                            </div>
-                            <div class="grow">  
-                                <h2 class="font-medium mb-2 flex gap-4 flex-wrap"> <span># Music</span> <span class="text-gray-500"> Awlad Hossain</span></h2>  
-                                <h3 class=" text-xl font-semibold mb-2">10 Kids Unaware of Their Halloween Costume</h3>  
-                                <p class="text-gray-600">It's one thing to subject yourself to ha Halloween costume mishap because, hey that's your prerogative</p>  
-                                <div class="flex items-center justify-center pt-4 mt-4 border-dashed border-[#BBBBC3] border-t-2">
-                                    <div class="flex gap-3 text-sm text-gray-500 w-full">  
-                                        <div class="flex items-center gap-2">
-                                            <span>
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.33333 10.5H18.6667M9.33333 15.1666H16.3333M10.5 21H7C6.07174 21 5.1815 20.6312 4.52513 19.9748C3.86875 19.3185 3.5 18.4282 3.5 17.5V8.16663C3.5 7.23837 3.86875 6.34813 4.52513 5.69175C5.1815 5.03538 6.07174 4.66663 7 4.66663H21C21.9283 4.66663 22.8185 5.03538 23.4749 5.69175C24.1313 6.34813 24.5 7.23837 24.5 8.16663V17.5C24.5 18.4282 24.1313 19.3185 23.4749 19.9748C22.8185 20.6312 21.9283 21 21 21H17.5L14 24.5L10.5 21Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>560</span>
-                                        </div> 
-                                        <div class="flex items-center gap-2">
-                                            <span>
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.6667 14C11.6667 14.6188 11.9125 15.2123 12.3501 15.6499C12.7877 16.0875 13.3812 16.3333 14 16.3333C14.6188 16.3333 15.2123 16.0875 15.6499 15.6499C16.0875 15.2123 16.3333 14.6188 16.3333 14C16.3333 13.3812 16.0875 12.7877 15.6499 12.3501C15.2123 11.9125 14.6188 11.6667 14 11.6667C13.3812 11.6667 12.7877 11.9125 12.3501 12.3501C11.9125 12.7877 11.6667 13.3812 11.6667 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M24.5 14C21.7 18.6667 18.2 21 14 21C9.8 21 6.3 18.6667 3.5 14C6.3 9.33333 9.8 7 14 7C18.2 7 21.7 9.33333 24.5 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>1,568</span>
-                                        </div>  
-                                        <div class="flex items-center gap-2">
-                                            <span><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.6667 14C11.6667 14.6188 11.9125 15.2123 12.3501 15.6499C12.7877 16.0875 13.3812 16.3333 14 16.3333C14.6188 16.3333 15.2123 16.0875 15.6499 15.6499C16.0875 15.2123 16.3333 14.6188 16.3333 14C16.3333 13.3812 16.0875 12.7877 15.6499 12.3501C15.2123 11.9125 14.6188 11.6667 14 11.6667C13.3812 11.6667 12.7877 11.9125 12.3501 12.3501C11.9125 12.7877 11.6667 13.3812 11.6667 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M24.5 14C21.7 18.6667 18.2 21 14 21C9.8 21 6.3 18.6667 3.5 14C6.3 9.33333 9.8 7 14 7C18.2 7 21.7 9.33333 24.5 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>5 min</span>
-                                        </div>  
-                                    </div>
-                                    <div class="flex">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_57_425)">
-                                            <path d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z" fill="#10B981"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_57_425">
-                                            <rect width="28" height="28" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>                                
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>  
-                        <!-- single item -->
-                        <div class="bg-gray-100 p-9 rounded-[16px] flex items-start gap-x-6">
-                            <div class="relative">
-                                <div class="bg-white w-[72px] h-[72px] rounded-lg flex-shrink-0">
-                                    <img src="" alt="">
-                                </div>  
-                                <div class="w-[18px] h-[18px] rounded-full bg-[#10B981] absolute top-[-6px] right-[-6px] border-2 border-white"></div>
-                            </div>
-                            <div class="grow">  
-                                <h2 class="font-medium mb-2 flex gap-4 flex-wrap"> <span># Music</span> <span class="text-gray-500"> Awlad Hossain</span></h2>  
-                                <h3 class=" text-xl font-semibold mb-2">10 Kids Unaware of Their Halloween Costume</h3>  
-                                <p class="text-gray-600">It's one thing to subject yourself to ha Halloween costume mishap because, hey that's your prerogative</p>  
-                                <div class="flex items-center justify-center pt-4 mt-4 border-dashed border-[#BBBBC3] border-t-2">
-                                    <div class="flex gap-3 text-sm text-gray-500 w-full">  
-                                        <div class="flex items-center gap-2">
-                                            <span>
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.33333 10.5H18.6667M9.33333 15.1666H16.3333M10.5 21H7C6.07174 21 5.1815 20.6312 4.52513 19.9748C3.86875 19.3185 3.5 18.4282 3.5 17.5V8.16663C3.5 7.23837 3.86875 6.34813 4.52513 5.69175C5.1815 5.03538 6.07174 4.66663 7 4.66663H21C21.9283 4.66663 22.8185 5.03538 23.4749 5.69175C24.1313 6.34813 24.5 7.23837 24.5 8.16663V17.5C24.5 18.4282 24.1313 19.3185 23.4749 19.9748C22.8185 20.6312 21.9283 21 21 21H17.5L14 24.5L10.5 21Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>560</span>
-                                        </div> 
-                                        <div class="flex items-center gap-2">
-                                            <span>
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.6667 14C11.6667 14.6188 11.9125 15.2123 12.3501 15.6499C12.7877 16.0875 13.3812 16.3333 14 16.3333C14.6188 16.3333 15.2123 16.0875 15.6499 15.6499C16.0875 15.2123 16.3333 14.6188 16.3333 14C16.3333 13.3812 16.0875 12.7877 15.6499 12.3501C15.2123 11.9125 14.6188 11.6667 14 11.6667C13.3812 11.6667 12.7877 11.9125 12.3501 12.3501C11.9125 12.7877 11.6667 13.3812 11.6667 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M24.5 14C21.7 18.6667 18.2 21 14 21C9.8 21 6.3 18.6667 3.5 14C6.3 9.33333 9.8 7 14 7C18.2 7 21.7 9.33333 24.5 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>1,568</span>
-                                        </div>  
-                                        <div class="flex items-center gap-2">
-                                            <span><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.6667 14C11.6667 14.6188 11.9125 15.2123 12.3501 15.6499C12.7877 16.0875 13.3812 16.3333 14 16.3333C14.6188 16.3333 15.2123 16.0875 15.6499 15.6499C16.0875 15.2123 16.3333 14.6188 16.3333 14C16.3333 13.3812 16.0875 12.7877 15.6499 12.3501C15.2123 11.9125 14.6188 11.6667 14 11.6667C13.3812 11.6667 12.7877 11.9125 12.3501 12.3501C11.9125 12.7877 11.6667 13.3812 11.6667 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M24.5 14C21.7 18.6667 18.2 21 14 21C9.8 21 6.3 18.6667 3.5 14C6.3 9.33333 9.8 7 14 7C18.2 7 21.7 9.33333 24.5 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>5 min</span>
-                                        </div>  
-                                    </div>
-                                    <div class="flex">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_57_425)">
-                                            <path d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z" fill="#10B981"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_57_425">
-                                            <rect width="28" height="28" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>                                
-                                    </div>
-                                </div>
-                            </div>  
-                        </div> 
-                        <!-- single item -->
-                        <div class="bg-gray-100 p-9 rounded-[16px] flex items-start gap-x-6">
-                            <div class="relative">
-                                <div class="bg-white w-[72px] h-[72px] rounded-lg flex-shrink-0">
-                                    <img src="" alt="">
-                                </div>  
-                                <div class="w-[18px] h-[18px] rounded-full bg-[#10B981] absolute top-[-6px] right-[-6px] border-2 border-white"></div>
-                            </div>
-                            <div class="grow">  
-                                <h2 class="font-medium mb-2 flex gap-4 flex-wrap"> <span># Music</span> <span class="text-gray-500"> Awlad Hossain</span></h2>  
-                                <h3 class=" text-xl font-semibold mb-2">10 Kids Unaware of Their Halloween Costume</h3>  
-                                <p class="text-gray-600">It's one thing to subject yourself to ha Halloween costume mishap because, hey that's your prerogative</p>  
-                                <div class="flex items-center justify-center pt-4 mt-4 border-dashed border-[#BBBBC3] border-t-2">
-                                    <div class="flex gap-3 text-sm text-gray-500 w-full">  
-                                        <div class="flex items-center gap-2">
-                                            <span>
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.33333 10.5H18.6667M9.33333 15.1666H16.3333M10.5 21H7C6.07174 21 5.1815 20.6312 4.52513 19.9748C3.86875 19.3185 3.5 18.4282 3.5 17.5V8.16663C3.5 7.23837 3.86875 6.34813 4.52513 5.69175C5.1815 5.03538 6.07174 4.66663 7 4.66663H21C21.9283 4.66663 22.8185 5.03538 23.4749 5.69175C24.1313 6.34813 24.5 7.23837 24.5 8.16663V17.5C24.5 18.4282 24.1313 19.3185 23.4749 19.9748C22.8185 20.6312 21.9283 21 21 21H17.5L14 24.5L10.5 21Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>560</span>
-                                        </div> 
-                                        <div class="flex items-center gap-2">
-                                            <span>
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.6667 14C11.6667 14.6188 11.9125 15.2123 12.3501 15.6499C12.7877 16.0875 13.3812 16.3333 14 16.3333C14.6188 16.3333 15.2123 16.0875 15.6499 15.6499C16.0875 15.2123 16.3333 14.6188 16.3333 14C16.3333 13.3812 16.0875 12.7877 15.6499 12.3501C15.2123 11.9125 14.6188 11.6667 14 11.6667C13.3812 11.6667 12.7877 11.9125 12.3501 12.3501C11.9125 12.7877 11.6667 13.3812 11.6667 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M24.5 14C21.7 18.6667 18.2 21 14 21C9.8 21 6.3 18.6667 3.5 14C6.3 9.33333 9.8 7 14 7C18.2 7 21.7 9.33333 24.5 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>1,568</span>
-                                        </div>  
-                                        <div class="flex items-center gap-2">
-                                            <span><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.6667 14C11.6667 14.6188 11.9125 15.2123 12.3501 15.6499C12.7877 16.0875 13.3812 16.3333 14 16.3333C14.6188 16.3333 15.2123 16.0875 15.6499 15.6499C16.0875 15.2123 16.3333 14.6188 16.3333 14C16.3333 13.3812 16.0875 12.7877 15.6499 12.3501C15.2123 11.9125 14.6188 11.6667 14 11.6667C13.3812 11.6667 12.7877 11.9125 12.3501 12.3501C11.9125 12.7877 11.6667 13.3812 11.6667 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M24.5 14C21.7 18.6667 18.2 21 14 21C9.8 21 6.3 18.6667 3.5 14C6.3 9.33333 9.8 7 14 7C18.2 7 21.7 9.33333 24.5 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>5 min</span>
-                                        </div>  
-                                    </div>
-                                    <div class="flex">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_57_425)">
-                                            <path d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z" fill="#10B981"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_57_425">
-                                            <rect width="28" height="28" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>                                
-                                    </div>
-                                </div>
-                            </div>  
-                        </div> 
-                        <!-- single item -->
-                        <div class="bg-gray-100 p-9 rounded-[16px] flex items-start gap-x-6">
-                            <div class="relative">
-                                <div class="bg-white w-[72px] h-[72px] rounded-lg flex-shrink-0">
-                                    <img src="" alt="">
-                                </div>  
-                                <div class="w-[18px] h-[18px] rounded-full bg-[#10B981] absolute top-[-6px] right-[-6px] border-2 border-white"></div>
-                            </div>
-                            <div class="grow">  
-                                <h2 class="font-medium mb-2 flex gap-4 flex-wrap"> <span># Music</span> <span class="text-gray-500"> Awlad Hossain</span></h2>  
-                                <h3 class=" text-xl font-semibold mb-2">10 Kids Unaware of Their Halloween Costume</h3>  
-                                <p class="text-gray-600">It's one thing to subject yourself to ha Halloween costume mishap because, hey that's your prerogative</p>  
-                                <div class="flex items-center justify-center pt-4 mt-4 border-dashed border-[#BBBBC3] border-t-2">
-                                    <div class="flex gap-3 text-sm text-gray-500 w-full">  
-                                        <div class="flex items-center gap-2">
-                                            <span>
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.33333 10.5H18.6667M9.33333 15.1666H16.3333M10.5 21H7C6.07174 21 5.1815 20.6312 4.52513 19.9748C3.86875 19.3185 3.5 18.4282 3.5 17.5V8.16663C3.5 7.23837 3.86875 6.34813 4.52513 5.69175C5.1815 5.03538 6.07174 4.66663 7 4.66663H21C21.9283 4.66663 22.8185 5.03538 23.4749 5.69175C24.1313 6.34813 24.5 7.23837 24.5 8.16663V17.5C24.5 18.4282 24.1313 19.3185 23.4749 19.9748C22.8185 20.6312 21.9283 21 21 21H17.5L14 24.5L10.5 21Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>560</span>
-                                        </div> 
-                                        <div class="flex items-center gap-2">
-                                            <span>
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.6667 14C11.6667 14.6188 11.9125 15.2123 12.3501 15.6499C12.7877 16.0875 13.3812 16.3333 14 16.3333C14.6188 16.3333 15.2123 16.0875 15.6499 15.6499C16.0875 15.2123 16.3333 14.6188 16.3333 14C16.3333 13.3812 16.0875 12.7877 15.6499 12.3501C15.2123 11.9125 14.6188 11.6667 14 11.6667C13.3812 11.6667 12.7877 11.9125 12.3501 12.3501C11.9125 12.7877 11.6667 13.3812 11.6667 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M24.5 14C21.7 18.6667 18.2 21 14 21C9.8 21 6.3 18.6667 3.5 14C6.3 9.33333 9.8 7 14 7C18.2 7 21.7 9.33333 24.5 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>1,568</span>
-                                        </div>  
-                                        <div class="flex items-center gap-2">
-                                            <span><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.6667 14C11.6667 14.6188 11.9125 15.2123 12.3501 15.6499C12.7877 16.0875 13.3812 16.3333 14 16.3333C14.6188 16.3333 15.2123 16.0875 15.6499 15.6499C16.0875 15.2123 16.3333 14.6188 16.3333 14C16.3333 13.3812 16.0875 12.7877 15.6499 12.3501C15.2123 11.9125 14.6188 11.6667 14 11.6667C13.3812 11.6667 12.7877 11.9125 12.3501 12.3501C11.9125 12.7877 11.6667 13.3812 11.6667 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M24.5 14C21.7 18.6667 18.2 21 14 21C9.8 21 6.3 18.6667 3.5 14C6.3 9.33333 9.8 7 14 7C18.2 7 21.7 9.33333 24.5 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>5 min</span>
-                                        </div>  
-                                    </div>
-                                    <div class="flex">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_57_425)">
-                                            <path d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z" fill="#10B981"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_57_425">
-                                            <rect width="28" height="28" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>                                
-                                    </div>
-                                </div>
-                            </div>  
-                        </div> 
-                        <!-- single item -->
-                        <div class="bg-gray-100 p-9 rounded-[16px] flex items-start gap-x-6">
-                            <div class="relative">
-                                <div class="bg-white w-[72px] h-[72px] rounded-lg flex-shrink-0">
-                                    <img src="" alt="">
-                                </div>  
-                                <div class="w-[18px] h-[18px] rounded-full bg-[#10B981] absolute top-[-6px] right-[-6px] border-2 border-white"></div>
-                            </div>
-                            <div class="grow">  
-                                <h2 class="font-medium mb-2 flex gap-4 flex-wrap"> <span># Music</span> <span class="text-gray-500"> Awlad Hossain</span></h2>  
-                                <h3 class=" text-xl font-semibold mb-2">10 Kids Unaware of Their Halloween Costume</h3>  
-                                <p class="text-gray-600">It's one thing to subject yourself to ha Halloween costume mishap because, hey that's your prerogative</p>  
-                                <div class="flex items-center justify-center pt-4 mt-4 border-dashed border-[#BBBBC3] border-t-2">
-                                    <div class="flex gap-3 text-sm text-gray-500 w-full">  
-                                        <div class="flex items-center gap-2">
-                                            <span>
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.33333 10.5H18.6667M9.33333 15.1666H16.3333M10.5 21H7C6.07174 21 5.1815 20.6312 4.52513 19.9748C3.86875 19.3185 3.5 18.4282 3.5 17.5V8.16663C3.5 7.23837 3.86875 6.34813 4.52513 5.69175C5.1815 5.03538 6.07174 4.66663 7 4.66663H21C21.9283 4.66663 22.8185 5.03538 23.4749 5.69175C24.1313 6.34813 24.5 7.23837 24.5 8.16663V17.5C24.5 18.4282 24.1313 19.3185 23.4749 19.9748C22.8185 20.6312 21.9283 21 21 21H17.5L14 24.5L10.5 21Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>560</span>
-                                        </div> 
-                                        <div class="flex items-center gap-2">
-                                            <span>
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.6667 14C11.6667 14.6188 11.9125 15.2123 12.3501 15.6499C12.7877 16.0875 13.3812 16.3333 14 16.3333C14.6188 16.3333 15.2123 16.0875 15.6499 15.6499C16.0875 15.2123 16.3333 14.6188 16.3333 14C16.3333 13.3812 16.0875 12.7877 15.6499 12.3501C15.2123 11.9125 14.6188 11.6667 14 11.6667C13.3812 11.6667 12.7877 11.9125 12.3501 12.3501C11.9125 12.7877 11.6667 13.3812 11.6667 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M24.5 14C21.7 18.6667 18.2 21 14 21C9.8 21 6.3 18.6667 3.5 14C6.3 9.33333 9.8 7 14 7C18.2 7 21.7 9.33333 24.5 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>1,568</span>
-                                        </div>  
-                                        <div class="flex items-center gap-2">
-                                            <span><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.6667 14C11.6667 14.6188 11.9125 15.2123 12.3501 15.6499C12.7877 16.0875 13.3812 16.3333 14 16.3333C14.6188 16.3333 15.2123 16.0875 15.6499 15.6499C16.0875 15.2123 16.3333 14.6188 16.3333 14C16.3333 13.3812 16.0875 12.7877 15.6499 12.3501C15.2123 11.9125 14.6188 11.6667 14 11.6667C13.3812 11.6667 12.7877 11.9125 12.3501 12.3501C11.9125 12.7877 11.6667 13.3812 11.6667 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M24.5 14C21.7 18.6667 18.2 21 14 21C9.8 21 6.3 18.6667 3.5 14C6.3 9.33333 9.8 7 14 7C18.2 7 21.7 9.33333 24.5 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>5 min</span>
-                                        </div>  
-                                    </div>
-                                    <div class="flex">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_57_425)">
-                                            <path d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z" fill="#10B981"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_57_425">
-                                            <rect width="28" height="28" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>                                
-                                    </div>
-                                </div>
-                            </div>  
-                        </div> 
-                        <!-- single item -->
-                        <div class="bg-gray-100 p-9 rounded-[16px] flex items-start gap-x-6">
-                            <div class="relative">
-                                <div class="bg-white w-[72px] h-[72px] rounded-lg flex-shrink-0">
-                                    <img src="" alt="">
-                                </div>  
-                                <div class="w-[18px] h-[18px] rounded-full bg-[#10B981] absolute top-[-6px] right-[-6px] border-2 border-white"></div>
-                            </div>
-                            <div class="grow">  
-                                <h2 class="font-medium mb-2 flex gap-4 flex-wrap"> <span># Music</span> <span class="text-gray-500"> Awlad Hossain</span></h2>  
-                                <h3 class=" text-xl font-semibold mb-2">10 Kids Unaware of Their Halloween Costume</h3>  
-                                <p class="text-gray-600">It's one thing to subject yourself to ha Halloween costume mishap because, hey that's your prerogative</p>  
-                                <div class="flex items-center justify-center pt-4 mt-4 border-dashed border-[#BBBBC3] border-t-2">
-                                    <div class="flex gap-3 text-sm text-gray-500 w-full">  
-                                        <div class="flex items-center gap-2">
-                                            <span>
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.33333 10.5H18.6667M9.33333 15.1666H16.3333M10.5 21H7C6.07174 21 5.1815 20.6312 4.52513 19.9748C3.86875 19.3185 3.5 18.4282 3.5 17.5V8.16663C3.5 7.23837 3.86875 6.34813 4.52513 5.69175C5.1815 5.03538 6.07174 4.66663 7 4.66663H21C21.9283 4.66663 22.8185 5.03538 23.4749 5.69175C24.1313 6.34813 24.5 7.23837 24.5 8.16663V17.5C24.5 18.4282 24.1313 19.3185 23.4749 19.9748C22.8185 20.6312 21.9283 21 21 21H17.5L14 24.5L10.5 21Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>560</span>
-                                        </div> 
-                                        <div class="flex items-center gap-2">
-                                            <span>
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.6667 14C11.6667 14.6188 11.9125 15.2123 12.3501 15.6499C12.7877 16.0875 13.3812 16.3333 14 16.3333C14.6188 16.3333 15.2123 16.0875 15.6499 15.6499C16.0875 15.2123 16.3333 14.6188 16.3333 14C16.3333 13.3812 16.0875 12.7877 15.6499 12.3501C15.2123 11.9125 14.6188 11.6667 14 11.6667C13.3812 11.6667 12.7877 11.9125 12.3501 12.3501C11.9125 12.7877 11.6667 13.3812 11.6667 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M24.5 14C21.7 18.6667 18.2 21 14 21C9.8 21 6.3 18.6667 3.5 14C6.3 9.33333 9.8 7 14 7C18.2 7 21.7 9.33333 24.5 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>1,568</span>
-                                        </div>  
-                                        <div class="flex items-center gap-2">
-                                            <span><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.6667 14C11.6667 14.6188 11.9125 15.2123 12.3501 15.6499C12.7877 16.0875 13.3812 16.3333 14 16.3333C14.6188 16.3333 15.2123 16.0875 15.6499 15.6499C16.0875 15.2123 16.3333 14.6188 16.3333 14C16.3333 13.3812 16.0875 12.7877 15.6499 12.3501C15.2123 11.9125 14.6188 11.6667 14 11.6667C13.3812 11.6667 12.7877 11.9125 12.3501 12.3501C11.9125 12.7877 11.6667 13.3812 11.6667 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M24.5 14C21.7 18.6667 18.2 21 14 21C9.8 21 6.3 18.6667 3.5 14C6.3 9.33333 9.8 7 14 7C18.2 7 21.7 9.33333 24.5 14Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            <span>5 min</span>
-                                        </div>  
-                                    </div>
-                                    <div class="flex">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_57_425)">
-                                            <path d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z" fill="#10B981"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_57_425">
-                                            <rect width="28" height="28" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>                                
-                                    </div>
-                                </div>
-                            </div>  
+                        <div id="displayShowPostContainer" class="flex flex-col gap-5">
+
                         </div>
                     </div>  
                     <div class="col-span-4 p-6 bg-[#F3F3F4] h-max rounded-3xl w-[385px]">  
                         <div class="flex justify-between mb-3 gap-1">
                             <h4 class="font-bold">Title</h4> 
-                            <button type="button" class="flex gap-1"> <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_30_2429)">
-                                <path d="M7 12L12 17L22 7" stroke="#3DCE09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M2 12L7 17M12 12L17 7" stroke="#3DCE09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_30_2429">
-                                <rect width="24" height="24" fill="white"/>
-                                </clipPath>
-                                </defs>
-                                </svg>
-                                </span>
-                                <span>Mark as read (4)</span>
-                            </button>
+                            <button type="button" class="flex gap-1">
+                                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_30_2429)">
+                                    <path d="M7 12L12 17L22 7" stroke="#3DCE09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12L7 17M12 12L17 7" stroke="#3DCE09" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_30_2429">
+                                    <rect width="24" height="24" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    </span>
+                                Mark as read (<span id="mark-read-counter">0</span>)
+                              </button>
                         </div> 
-                        <div class="space-y-4">  
-                            <div class="bg-white rounded-2xl p-4 flex">
-                                <h5 class="text-base font-semibold">10 Kids Unaware of Their Halloween Costume</h5>
-                                <div class="flex items-center gap-2">
-                                    <span>
-                                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9.66667 8C9.66667 8.61884 9.9125 9.21233 10.3501 9.64992C10.7877 10.0875 11.3812 10.3333 12 10.3333C12.6188 10.3333 13.2123 10.0875 13.6499 9.64992C14.0875 9.21233 14.3333 8.61884 14.3333 8C14.3333 7.38116 14.0875 6.78767 13.6499 6.35008C13.2123 5.9125 12.6188 5.66667 12 5.66667C11.3812 5.66667 10.7877 5.9125 10.3501 6.35008C9.9125 6.78767 9.66667 7.38116 9.66667 8Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M22.5 8C19.7 12.6667 16.2 15 12 15C7.8 15 4.3 12.6667 1.5 8C4.3 3.33333 7.8 1 12 1C16.2 1 19.7 3.33333 22.5 8Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                        
-                                    </span>
-                                    <span>1,568</span>
-                                </div>
-                            </div>   
-                            <div class="bg-white rounded-2xl p-4 flex">
-                                <h5 class="text-base font-semibold">10 Kids Unaware of Their Halloween Costume</h5>
-                                <div class="flex items-center gap-2">
-                                    <span>
-                                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9.66667 8C9.66667 8.61884 9.9125 9.21233 10.3501 9.64992C10.7877 10.0875 11.3812 10.3333 12 10.3333C12.6188 10.3333 13.2123 10.0875 13.6499 9.64992C14.0875 9.21233 14.3333 8.61884 14.3333 8C14.3333 7.38116 14.0875 6.78767 13.6499 6.35008C13.2123 5.9125 12.6188 5.66667 12 5.66667C11.3812 5.66667 10.7877 5.9125 10.3501 6.35008C9.9125 6.78767 9.66667 7.38116 9.66667 8Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M22.5 8C19.7 12.6667 16.2 15 12 15C7.8 15 4.3 12.6667 1.5 8C4.3 3.33333 7.8 1 12 1C16.2 1 19.7 3.33333 22.5 8Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                        
-                                    </span>
-                                    <span>1,568</span>
-                                </div>
-                            </div>   
-                            <div class="bg-white rounded-2xl p-4 flex">
-                                <h5 class="text-base font-semibold">10 Kids Unaware of Their Halloween Costume</h5>
-                                <div class="flex items-center gap-2">
-                                    <span>
-                                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9.66667 8C9.66667 8.61884 9.9125 9.21233 10.3501 9.64992C10.7877 10.0875 11.3812 10.3333 12 10.3333C12.6188 10.3333 13.2123 10.0875 13.6499 9.64992C14.0875 9.21233 14.3333 8.61884 14.3333 8C14.3333 7.38116 14.0875 6.78767 13.6499 6.35008C13.2123 5.9125 12.6188 5.66667 12 5.66667C11.3812 5.66667 10.7877 5.9125 10.3501 6.35008C9.9125 6.78767 9.66667 7.38116 9.66667 8Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M22.5 8C19.7 12.6667 16.2 15 12 15C7.8 15 4.3 12.6667 1.5 8C4.3 3.33333 7.8 1 12 1C16.2 1 19.7 3.33333 22.5 8Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
-                                    </span>
-                                    <span>1,568</span>
-                                </div>
-                            </div>   
-                            <div class="bg-white rounded-2xl p-4 flex">
-                                <h5 class="text-base font-semibold">10 Kids Unaware of Their Halloween Costume</h5>
-                                <div class="flex items-center gap-2">
-                                    <span>
-                                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9.66667 8C9.66667 8.61884 9.9125 9.21233 10.3501 9.64992C10.7877 10.0875 11.3812 10.3333 12 10.3333C12.6188 10.3333 13.2123 10.0875 13.6499 9.64992C14.0875 9.21233 14.3333 8.61884 14.3333 8C14.3333 7.38116 14.0875 6.78767 13.6499 6.35008C13.2123 5.9125 12.6188 5.66667 12 5.66667C11.3812 5.66667 10.7877 5.9125 10.3501 6.35008C9.9125 6.78767 9.66667 7.38116 9.66667 8Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M22.5 8C19.7 12.6667 16.2 15 12 15C7.8 15 4.3 12.6667 1.5 8C4.3 3.33333 7.8 1 12 1C16.2 1 19.7 3.33333 22.5 8Z" stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
-                                    </span>
-                                    <span>1,568</span>
-                                </div>
-                            </div>  
+                        <div id="readPostContainer" class="space-y-4">    
                         </div>  
                     </div>
                 </div>  
@@ -491,7 +126,7 @@
                             <p class="mb-7 text-white">  
                                 Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app.  
                             </p>
-                            <button type="button" class="px-8 h-[56px] flex items-center y-2 text-white bg-indigo-500 rounded-full hover:bg-indigo-600">Registered Now</button>
+                            <button onclick="handleButtonClick()" type="button" class="px-8 h-[56px] flex items-center y-2 text-white bg-indigo-500 rounded-full hover:bg-indigo-600">Registered Now</button>
                         </div>
                     </div>
                     <div class="right">
@@ -619,25 +254,25 @@
 
     <footer class="pt-[100px] pb-[100px]" style="background: linear-gradient(180deg, rgba(18, 19, 45, 0.05) 0%, rgba(18, 19, 45, 0) 100%);">
         <div class="max-w-[1170px] mx-auto">
-            <div class="text-center">
+            <div class="text-center w-2/4 mx-auto">
                 <div class="mb-8 flex justify-center">
                     <a href="#" class="block">
                         <img src="assets/images/logo.svg" alt="">
                     </a>
                 </div>
-                <p class="mb-5">
+                <p class="mb-7">
                     Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC
                 </p>
-                <div class="flex justify-center gap-3 flex-wrap">
+                <div class="flex justify-center gap-4 items-center flex-wrap">
                     <a href="#">
                         <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19.8879 2.65563C19.1421 2.98551 18.3548 3.19169 17.5262 3.31539C18.3548 2.82057 19.0178 2.0371 19.3078 1.0887C18.5206 1.54228 17.6505 1.87216 16.6975 2.07834C15.9517 1.29487 14.8745 0.800049 13.7143 0.800049C11.4769 0.800049 9.6539 2.6144 9.6539 4.84109C9.6539 5.17097 9.69533 5.45962 9.7782 5.74827C6.42212 5.58333 3.39751 3.97516 1.36729 1.50105C1.03583 2.11957 0.828661 2.77934 0.828661 3.52157C0.828661 4.92356 1.53302 6.16062 2.65171 6.90285C1.98879 6.86162 1.36729 6.69668 0.787228 6.40803V6.44926C0.787228 8.42855 2.19595 10.078 4.06044 10.4491C3.72897 10.5315 3.35608 10.5728 2.98318 10.5728C2.73458 10.5728 2.44455 10.5315 2.19595 10.4903C2.73458 12.0985 4.22617 13.2943 6.00779 13.2943C4.59907 14.3664 2.85888 15.0262 0.95296 15.0262C0.621495 15.0262 0.290031 15.0262 0 14.9849C1.82305 16.1395 3.93614 16.7993 6.25639 16.7993C13.7558 16.7993 17.8576 10.614 17.8576 5.25345C17.8576 5.0885 17.8576 4.88233 17.8576 4.71739C18.6449 4.18133 19.3492 3.48033 19.8879 2.65563Z" fill="#12132D"/>
                         </svg>                        
                     </a>
                     <a href="#">
-                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19.8879 2.65563C19.1421 2.98551 18.3548 3.19169 17.5262 3.31539C18.3548 2.82057 19.0178 2.0371 19.3078 1.0887C18.5206 1.54228 17.6505 1.87216 16.6975 2.07834C15.9517 1.29487 14.8745 0.800049 13.7143 0.800049C11.4769 0.800049 9.6539 2.6144 9.6539 4.84109C9.6539 5.17097 9.69533 5.45962 9.7782 5.74827C6.42212 5.58333 3.39751 3.97516 1.36729 1.50105C1.03583 2.11957 0.828661 2.77934 0.828661 3.52157C0.828661 4.92356 1.53302 6.16062 2.65171 6.90285C1.98879 6.86162 1.36729 6.69668 0.787228 6.40803V6.44926C0.787228 8.42855 2.19595 10.078 4.06044 10.4491C3.72897 10.5315 3.35608 10.5728 2.98318 10.5728C2.73458 10.5728 2.44455 10.5315 2.19595 10.4903C2.73458 12.0985 4.22617 13.2943 6.00779 13.2943C4.59907 14.3664 2.85888 15.0262 0.95296 15.0262C0.621495 15.0262 0.290031 15.0262 0 14.9849C1.82305 16.1395 3.93614 16.7993 6.25639 16.7993C13.7558 16.7993 17.8576 10.614 17.8576 5.25345C17.8576 5.0885 17.8576 4.88233 17.8576 4.71739C18.6449 4.18133 19.3492 3.48033 19.8879 2.65563Z" fill="#12132D"/>
-                        </svg>                                              
+                        <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.2142 22.1658V12.3286H0.887878V8.49479H4.2142V5.6675C4.2142 2.38645 6.22777 0.599854 9.16874 0.599854C10.5775 0.599854 11.7882 0.704238 12.1411 0.750894V4.17978L10.1014 4.18071C8.50191 4.18071 8.19221 4.93712 8.19221 6.0471V8.49479H12.0068L11.5101 12.3286H8.19221V22.1658H4.2142Z" fill="#12132D"/>
+                        </svg>          
                     </a>
                     <a href="#">
                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -652,12 +287,15 @@
                         </svg>                                  
                     </a>
                 </div>
-                <div class="border-t pt-10 mt-10">
+            </div>
+            <div class="max-w-[1170px] mx-auto">
+                <div class="border-t border-[#E7E7EB] text-center pt-10 mt-10">
                     <p>2017, All Rights Reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
