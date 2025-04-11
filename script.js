@@ -167,9 +167,52 @@ const handleButtonClick = (post) => {
     }
 };
 
-
-
 allPostApi();
 
+const latestPostApi = async () => {  
+    const response = await fetch('https://openapi.programming-hero.com/api/retro-forum/latest-posts');   
+    const data = await response.json();  
+    const latestPosts = data || [];  
+    showLatestPost(latestPosts);  
+};  
+  
+const showLatestPost = (latestPosts) => {
+    const latestContainer = document.getElementById('latestPostContainer');
 
+    latestPosts.forEach(post => {
+        const { cover_image, title, description, author, profile_image, posted_date } = post;
 
+        const latestPostCard = document.createElement("div");
+        latestPostCard.innerHTML = `
+            <div class="blog-item border-[#DBDCDF] border p-6 rounded-[20px]">
+                <div class="mb-6">
+                    <img class="bg-[#F3F3F4] rounded-[20px] h-[190px] w-full object-cover" src="${cover_image}" alt="Post Image">
+                </div>
+                <div class="flex gap-1 mb-2 text-sm text-gray-600">
+                    <span>
+                        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#12132D" stroke-opacity="0.6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M8 7V3m8 4V3m-9 9h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </span>
+                    <span>${author.posted_date}</span>
+                </div>
+                <div class="mb-4">
+                    <h6 class="text-lg font-semibold mb-2">${title}</h6>
+                    <p>${description}</p>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <img class="w-10 h-10 rounded-full" src="${profile_image}" alt="Avatar">
+                    <div class="flex flex-col">
+                        <h6 class="font-semibold">${author?.name || 'Unknown'}</h6>
+                        <span class="text-sm">${author?.designation || 'Unknown'}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+        latestContainer.appendChild(latestPostCard);
+    });
+};
+
+// Call the API
+latestPostApi();
