@@ -178,6 +178,8 @@ const latestPostApi = async () => {
   
 const showLatestPost = (latestPosts) => {
     const latestContainer = document.getElementById('latestPostContainer');
+    
+    // latestContainer.innerHTML = ""; // Clear previous content
 
     latestPosts.forEach(post => {
         const { cover_image, title, description, author, profile_image, posted_date } = post;
